@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Encrypt</title>
+  <style>html,body{color:#fff;background:#111;height:100%;margin:0;padding:0;font-family:monospace}.container{box-sizing:border-box;flex-direction:column;justify-content:center;align-items:center;gap:16px;height:100%;padding:20px;display:flex}input,textarea{color:#fff;text-align:center;background:#222;border:1px solid #444;border-radius:4px;width:100%;max-width:500px;padding:10px;font-family:monospace;font-size:1.2em}textarea{resize:vertical;word-break:break-all;height:120px}button{color:#fff;cursor:pointer;background:#e44;border:none;border-radius:4px;padding:10px 30px;font-family:monospace;font-size:1.2em}button:hover{background:#f55}label{color:#888;font-size:.9em}#status{color:#f84;font-size:.9em}</style>
+  <script type="module" crossorigin src="./assets/encrypt-RIf9pIL-.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/crypt-uApoxfZQ.js">
+</head>
+<body>
+  <div class="container">
+    <label>TOTP Secret (base32)</label>
+    <input id="secret" type="text" placeholder="base32 secret" />
+    <label>Password</label>
+    <input id="password" type="password" placeholder="encryption password" />
+    <button id="encrypt-btn">Encrypt</button>
+    <div id="status"></div>
+    <label>Output (hex blob for deploy)</label>
+    <textarea id="output" readonly></textarea>
+  </div>
+</body>
+</html>
